@@ -1,0 +1,7 @@
+{{ define "content" }}
+<div id="content">
+  <p>初期コンテンツ</p>
+</div>
+<button hx-get="/update" hx-target="#content">更新</button>
+<a href="/form" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">フォームページへ</a>
+{{ end }}
