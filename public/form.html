@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTMXとGoテンプレート</title>
+	<script src="https://unpkg.com/htmx.org"></script>
+</head>
+
+<body>
+	<form hx-post="/submit" hx-target="#response" hx-swap="outerHTML">
+		<input type="text" name="name" placeholder="名前を入力してください">
+		<button type="submit">送信</button>
+	</form>
+	<div id="response"></div>
+</body>
+
+</html>

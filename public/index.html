@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTMXとGoテンプレート</title>
+	<script src="https://unpkg.com/htmx.org"></script>
+</head>
+
+<body>
+	<div id="content">
+		<p>初期コンテンツ</p>
+	</div>
+	<button hx-get="/update" hx-target="#content">更新</button>
+</body>
+
+</html>
